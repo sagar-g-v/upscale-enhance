@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upscale-enhance"
+version = "0.1.0"
+description = "Upscale, clean up and colour-grade folders of images and videos on the GPU"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0", "numpy>=1.23", "Pillow>=10.0"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+upscale-enhance = "upscale_enhance.cli:main"
+
+[tool.setuptools]
+packages = ["upscale_enhance"]
