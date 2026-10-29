@@ -131,7 +131,7 @@ python -m pytest -q          # CPU only, uses stand-in networks (no weights need
 
 ## License
 
-The code is MIT licensed (see `LICENSE`). Model weights are not included.
+The code is licensed under the Apache License 2.0 (see `LICENSE`). Model weights are not included.
 `fetch-model` downloads them from the Real-ESRGAN project, which publishes them
 under the BSD-3-Clause license. Check the license of any other model you load
 with `--weights`.
